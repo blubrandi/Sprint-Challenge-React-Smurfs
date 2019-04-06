@@ -39,12 +39,6 @@ class SmurfForm extends Component {
     this.props.addSmurf(this.state)
   }
 
-  putHandler = event => {
-    event.preventdefault()
-    axios
-        .put("http://localhost:3333/smurfs/${id}", this.state.item)
-  }
-
   render() {
     return (
       <div className="SmurfForm">
