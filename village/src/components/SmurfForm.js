@@ -8,7 +8,8 @@ class SmurfForm extends Component {
     this.state = {
       name: '',
       age: '',
-      height: ''
+      height: '',
+      thumbnail: ''
     };
   }
 
@@ -17,13 +18,15 @@ class SmurfForm extends Component {
       .post('http://localhost:3333/smurfs', {
         name: this.state.name,
         age: this.state.age,
-        height: this.state.height
+        height: this.state.height,
+        thumbnail: ''
       })
       .then(response => {
         this.setState({
           name: '',
           age: '',
-          height: ''
+          height: '',
+          thumbnail: ''
         })
       })
       .catch(err => console.log(err))
