@@ -13,7 +13,6 @@ const NavClass = styled.div`
   
   navLink {
     padding-right: 20px;
-    margin-right: 40px;
   }
 
   navLink :hover {
