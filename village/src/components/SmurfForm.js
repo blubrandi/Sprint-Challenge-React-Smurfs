@@ -87,6 +87,7 @@ class SmurfForm extends Component {
       .catch(err => console.log(err))
   }
 
+
   changeHandler = event => {
     this.setState({ 
       [event.target.name]: event.target.value });
